@@ -40,7 +40,7 @@ export const NavLogo = styled.img`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 230px;
+  width: 200px;
 
   @media screen and (max-width: 960px) {
     width: 150px;
@@ -76,7 +76,7 @@ export const SearchForm = styled.form`
 `;
 
 export const SearchInput = styled.input`
-  width: 155px;
+  width: 158px;
   height: 30px;
   border: 1px solid #d7d9de;
   padding: 0 10px;

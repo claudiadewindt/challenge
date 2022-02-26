@@ -1,4 +1,5 @@
 import React from "react";
+// importing styled components
 import {
   TopNav,
   TopNavLeft,
@@ -7,8 +8,10 @@ import {
   TopNavRight,
   TopNavRightItem,
   TopNavWrapper,
-  BagIcon,
 } from "./TopNavbar.styles.js";
+// importing the icon
+
+import { ReactComponent as Cart } from "../../assets/icons/cart.svg";
 
 const TopNavbar = () => {
   return (
@@ -31,7 +34,8 @@ const TopNavbar = () => {
           <TopNavRightItem>|</TopNavRightItem>
           <TopNavRightItem>SIGN IN / REGISTER</TopNavRightItem>
           <TopNavRightItem>|</TopNavRightItem>
-          <BagIcon />
+
+          <Cart style={{ height: "22px", marginLeft: "10px", width: "24px" }} />
           <TopNavRightItem></TopNavRightItem>
         </TopNavRight>
       </TopNavWrapper>

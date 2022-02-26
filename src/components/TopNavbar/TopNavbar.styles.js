@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { RiHandbagFill } from "react-icons/ri";
 
 export const TopNav = styled.nav`
   width: 100%;
@@ -58,15 +57,6 @@ export const TopNavCenterItem = styled.p`
 `;
 
 export const TopNavRight = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const BagIcon = styled(RiHandbagFill)`
-  font-size: 22px;
-  color: var(--primary-color);
-  margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
