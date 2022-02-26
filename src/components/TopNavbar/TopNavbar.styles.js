@@ -9,7 +9,7 @@ export const TopNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d7d9de;
 `;
 
 export const TopNavWrapper = styled.div`
@@ -18,6 +18,16 @@ export const TopNavWrapper = styled.div`
   align-items: center;
   min-width: 70%;
   margin: 0 auto;
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 768px) {
+    transition: 0.8s all ease;
+    width: 95%;
+  }
 `;
 
 export const TopNavLeft = styled.ul`
@@ -29,7 +39,7 @@ export const TopNavLeftItem = styled.li`
   list-style: none;
   margin-right: 10px;
   font-size: 11px;
-  color: #000;
+  color: var(--primary-color);
   &:not(:nth-of-type(1)) {
     @media screen and (max-width: 768px) {
       display: none;
@@ -38,8 +48,8 @@ export const TopNavLeftItem = styled.li`
 `;
 
 export const TopNavCenterItem = styled.p`
-  font-size: 12px;
-  color: #000;
+  font-size: 13px;
+  color: var(--primary-color);
   font-style: italic;
 
   @media screen and (max-width: 768px) {
@@ -55,7 +65,7 @@ export const TopNavRight = styled.ul`
 
 export const BagIcon = styled(RiHandbagFill)`
   font-size: 22px;
-  color: #000;
+  color: var(--primary-color);
   margin-left: 10px;
   display: flex;
   align-items: center;
@@ -66,7 +76,7 @@ export const TopNavRightItem = styled.li`
   list-style: none;
   margin-left: 10px;
   font-size: 11px;
-  color: #000;
+  color: var(--primary-color);
   &:nth-of-type(4) {
     font-size: 22px;
   }
