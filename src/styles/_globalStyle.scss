@@ -1,16 +1,19 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
   margin: 0;
   padding: 0;
-
-  font-weight: medium;
 }
 
-:root {
-  --primary-color: #00174f;
-  --secondary-color: #cd2028;
-}
-
+//fonts
 @font-face {
   font-family: "heroiccondensed";
   src: url("./assets/fonts/heroiccondensed-black-webfont.eot");
@@ -46,3 +49,9 @@
   font-weight: 400;
   font-style: normal;
 }
+
+//colors
+$red: #ff1a3e;
+$darkBlue: #012c5c;
+$white: #fff;
+$gray: #f9f9f9ea;
