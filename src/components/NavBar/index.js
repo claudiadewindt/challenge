@@ -1,39 +1,28 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-
-import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  NavMenu,
-  NavItem,
-  SearchForm,
-  SearchIcon,
-  SearchInput,
-} from "./NavBar.styles";
+import { IoMdSearch } from "react-icons/io";
+import "../../styles/Style.css";
 
 const NavBar = () => {
   return (
-    <>
-      <Nav>
-        <NavbarContainer>
-          <NavLogo src={logo} alt="Tommy Hilfiger logo" />
+    <nav className="nav-bar">
+      <div className="nav-bar-container">
+        <img className="nav-logo" src={logo} alt="Tommy Hilfiger logo" />
 
-          <NavMenu>
-            <NavItem>WOMEN</NavItem>
-            <NavItem>MEN</NavItem>
-            <NavItem>KIDS</NavItem>
-            <NavItem>LABELS</NavItem>
-            <NavItem>SALE</NavItem>
-          </NavMenu>
+        <ul className="nav-menu">
+          <li className="li-menu">WOMEN</li>
+          <li className="li-menu">MEN</li>
+          <li className="li-menu">KIDS</li>
+          <li className="li-menu">LABELS</li>
+          <li className="li-menu">SALE</li>
+        </ul>
 
-          <SearchForm>
-            <SearchInput type="text" placeholder="Search" />
-            <SearchIcon />
-          </SearchForm>
-        </NavbarContainer>
-      </Nav>
-    </>
+        <form>
+          <input type="text" placeholder="Search" />
+          <IoMdSearch fontSize="1.3rem" color="$darkblue" />
+        </form>
+      </div>
+    </nav>
   );
 };
 

@@ -1,45 +1,34 @@
 import React from "react";
-// importing styled components
-import {
-  TopNav,
-  TopNavLeft,
-  TopNavLeftItem,
-  TopNavCenterItem,
-  TopNavRight,
-  TopNavRightItem,
-  TopNavWrapper,
-} from "./TopNavbar.styles.js";
+import "../../styles/Style.css";
 // importing the icon
-
 import { ReactComponent as Cart } from "../../assets/icons/cart.svg";
 
 const TopNavbar = () => {
   return (
-    <TopNav>
-      <TopNavWrapper>
-        <TopNavLeft>
-          <TopNavLeftItem>UK/GBP (£)</TopNavLeftItem>
-          <TopNavLeftItem>|</TopNavLeftItem>
-          <TopNavLeftItem>STORES</TopNavLeftItem>
-          <TopNavLeftItem>|</TopNavLeftItem>
-          <TopNavLeftItem>CUSTOMER SERVICE</TopNavLeftItem>
-        </TopNavLeft>
+    <nav className="top-Nav">
+      <div className="top-nav-wrapper">
+        <ul className="left-ul">
+          <li className="left-li">UK/GBP (£)</li>
+          <li className="left-li">|</li>
+          <li className="left-li">STORES</li>
+          <li className="left-li">|</li>
+          <li className="left-li">CUSTOMER SERVICE</li>
+        </ul>
 
-        <TopNavCenterItem>
+        <p className="center-top-nav">
           Enjoy free delivery on all orders over £50
-        </TopNavCenterItem>
+        </p>
 
-        <TopNavRight>
-          <TopNavRightItem>NEWSLETTER SIGN UP</TopNavRightItem>
-          <TopNavRightItem>|</TopNavRightItem>
-          <TopNavRightItem>SIGN IN / REGISTER</TopNavRightItem>
-          <TopNavRightItem>|</TopNavRightItem>
+        <ul className="right-ul">
+          <li className="right-li">NEWSLETTER SIGN UP</li>
+          <li className="right-li">|</li>
+          <li className="right-li">SIGN IN / REGISTER</li>
+          <li className="right-li">|</li>
 
           <Cart style={{ height: "22px", marginLeft: "10px", width: "24px" }} />
-          <TopNavRightItem></TopNavRightItem>
-        </TopNavRight>
-      </TopNavWrapper>
-    </TopNav>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
