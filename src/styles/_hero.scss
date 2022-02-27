@@ -42,7 +42,7 @@
       top: 25rem;
     }
 
-    &-live {
+    &-topText {
       position: absolute;
       top: 7rem;
       font-family: "heroiccondensed";
@@ -51,9 +51,9 @@
       font-weight: 800;
       color: $red;
       z-index: -2;
-      animation: live 1s ease-in-out 1.6s 1 normal forwards;
+      animation: topText 1s ease-in-out 1.6s 1 normal forwards;
 
-      @keyframes live {
+      @keyframes topText {
         0% {
           transform: translate(0rem, 0rem);
         }
@@ -83,6 +83,7 @@
 
     &-with {
       font-size: 1.5rem;
+      font-weight: 900;
     }
 
     &-paragraph {
@@ -97,7 +98,7 @@
     }
   }
 
-  .hideLive {
+  .hideTopText {
     position: absolute;
     top: 7rem;
     background-color: $white;

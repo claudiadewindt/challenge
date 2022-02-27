@@ -20,8 +20,8 @@ const Hero = () => {
         </div>
 
         {/*   top text */}
-        <div className="hero-text-live">24/7 LIVE</div>
-        <div className="hideLive"></div>
+        <div className="hero-text-topText">24/7 LIVE</div>
+        <div className="hideTopText"></div>
 
         {/*   image */}
         <img className="hero-mainImg" src={heroImage} alt="models" />

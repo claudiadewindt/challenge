@@ -180,9 +180,11 @@ input {
   margin-right: 10px;
   font-size: 11px;
   color: #012c5c;
+}
+.left-li:not(:nth-of-type(2)):not(:nth-of-type(4)) {
   cursor: pointer;
 }
-.left-li:hover {
+.left-li:hover:not(:nth-of-type(2)):not(:nth-of-type(4)) {
   color: #ff1a3e;
 }
 @media screen and (max-width: 768px) {
@@ -213,9 +215,11 @@ input {
   margin-left: 10px;
   font-size: 11px;
   color: #012c5c;
+}
+.right-li:not(:nth-of-type(2)):not(:nth-of-type(4)) {
   cursor: pointer;
 }
-.right-li:hover {
+.right-li:hover:not(:nth-of-type(2)):not(:nth-of-type(4)) {
   color: #ff1a3e;
 }
 .right-li:nth-of-type(4) {
@@ -278,7 +282,7 @@ input {
   width: 12.5rem;
   top: 25rem;
 }
-.hero-text-live {
+.hero-text-topText {
   position: absolute;
   top: 7rem;
   font-family: "heroiccondensed";
@@ -287,10 +291,10 @@ input {
   font-weight: 800;
   color: #ff1a3e;
   z-index: -2;
-  -webkit-animation: live 1s ease-in-out 1.6s 1 normal forwards;
-          animation: live 1s ease-in-out 1.6s 1 normal forwards;
+  -webkit-animation: topText 1s ease-in-out 1.6s 1 normal forwards;
+          animation: topText 1s ease-in-out 1.6s 1 normal forwards;
 }
-@-webkit-keyframes live {
+@-webkit-keyframes topText {
   0% {
     transform: translate(0rem, 0rem);
   }
@@ -298,7 +302,7 @@ input {
     transform: translate(0rem, -2rem);
   }
 }
-@keyframes live {
+@keyframes topText {
   0% {
     transform: translate(0rem, 0rem);
   }
@@ -323,6 +327,7 @@ input {
 }
 .hero-text-with {
   font-size: 1.5rem;
+  font-weight: 900;
 }
 .hero-text-paragraph {
   font-family: "Arial";
@@ -334,7 +339,7 @@ input {
   margin-bottom: 1.5rem;
   margin-top: 1.2rem;
 }
-.hero .hideLive {
+.hero .hideTopText {
   position: absolute;
   top: 7rem;
   background-color: #fff;
