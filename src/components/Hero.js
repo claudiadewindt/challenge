@@ -6,22 +6,22 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <div className="hero">
+        {/*   top text */}
+        <div className="hero-text-topText">24/7 LIVE.</div>
+        <div className="hideTopText"></div>
+
         {/*   left section */}
         <div className="hero-text">
           <div className="hero-text-bottom">
             <h2 className="hero-text-spring">SPRING</h2>
             <h2 className="hero-text-2017">2017</h2>
-            <h3 className="hero-text-with">WITH ANWARD HADID & SOFIA RICHIE</h3>
+            <h3 className="hero-text-with">WITH ANWAR HADID & SOFIA RICHIE</h3>
             <p class="hero-text-paragraph">
               Engineered for perfect form and exceptional fit - whatever you do
               in them.
             </p>
           </div>
         </div>
-
-        {/*   top text */}
-        <div className="hero-text-topText">24/7 LIVE</div>
-        <div className="hideTopText"></div>
 
         {/*   image */}
         <img className="hero-mainImg" src={heroImage} alt="models" />

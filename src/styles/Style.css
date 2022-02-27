@@ -286,9 +286,9 @@ input {
   position: absolute;
   top: 7rem;
   font-family: "heroiccondensed";
-  font-size: 1.8rem;
-  letter-spacing: 5px;
-  font-weight: 800;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  font-weight: 900;
   color: #ff1a3e;
   z-index: -2;
   -webkit-animation: topText 1s ease-in-out 1.6s 1 normal forwards;
@@ -314,16 +314,18 @@ input {
   color: #012c5c;
   line-height: 10px;
   font-size: 3rem;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
+  font-weight: 900;
 }
 .hero-text-2017 {
   font-size: 3rem;
   color: #ff1a3e;
   display: block;
-  line-height: 40px;
-  letter-spacing: 10px;
+  line-height: 10px;
+  letter-spacing: 8px;
   padding-bottom: 1.875rem;
   margin-top: 0.3rem;
+  font-weight: 800;
 }
 .hero-text-with {
   font-size: 1.5rem;
