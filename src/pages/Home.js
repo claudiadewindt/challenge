@@ -1,14 +1,14 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 import TopNavbar from "../components/TopNavbar";
-import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <>
       <TopNavbar />
-      <NavBar />
-      <Header />
+      <Navbar />
+      <Hero />
     </>
   );
 };

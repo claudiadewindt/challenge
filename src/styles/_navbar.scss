@@ -5,9 +5,9 @@
   align-items: center;
   font-size: 1rem;
   width: 100%;
-  color: var(--primary-color);
-  background-color: #fff;
-  border-bottom: 1px solid #d7d9de;
+  color: $darkBlue;
+  background-color: $white;
+  border-bottom: 1px solid $gray;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -58,7 +58,11 @@
 .li-menu {
   font-size: 0.8rem;
   margin-right: 35px;
-  color: var(--primary-color);
+  color: $darkBlue;
+  cursor: pointer;
+  &:hover {
+    color: $red;
+  }
 
   &::last-child {
     margin-right: 0;
@@ -75,9 +79,13 @@ form {
 input {
   width: 158px;
   height: 30px;
-  border: 1px solid #d7d9de;
+  border: 1px solid $gray;
   padding: 0 10px;
   font-size: 0.7rem;
   outline: none;
   margin-right: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 130px;
+  }
 }

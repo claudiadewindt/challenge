@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../assets/images/logo.png";
 import { IoMdSearch } from "react-icons/io";
-import "../../styles/Style.css";
+import "../styles/Style.css";
 
 const NavBar = () => {
   return (

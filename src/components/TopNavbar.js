@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/Style.css";
+import "../styles/Style.css";
 // importing the icon
-import { ReactComponent as Cart } from "../../assets/icons/cart.svg";
+import { ReactComponent as Cart } from "../assets/icons/cart.svg";
 
 const TopNavbar = () => {
   return (
@@ -25,7 +25,14 @@ const TopNavbar = () => {
           <li className="right-li">SIGN IN / REGISTER</li>
           <li className="right-li">|</li>
 
-          <Cart style={{ height: "22px", marginLeft: "10px", width: "24px" }} />
+          <Cart
+            style={{
+              height: "22px",
+              marginLeft: "10px",
+              width: "24px",
+              cursor: "pointer",
+            }}
+          />
         </ul>
       </div>
     </nav>
