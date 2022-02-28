@@ -358,13 +358,14 @@ input {
           animation: appear 0.5s ease-in-out 1s 1 normal forwards;
 }
 .hero .white-top-box {
-  width: 7rem;
-  height: 25rem;
+  width: 12%;
+  height: 40%;
   background-color: #fff;
   position: absolute;
-  right: -0.1rem;
+  right: -0.1%;
   -webkit-animation: shrinkTop 0.7s ease-in-out 1s 1 normal forwards;
           animation: shrinkTop 0.7s ease-in-out 1s 1 normal forwards;
+  overflow: hidden;
 }
 .hero .white-top-box::after {
   content: "";
