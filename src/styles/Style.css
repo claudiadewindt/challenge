@@ -1,11 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: flex-box;
   padding: 0;
 }
 
@@ -66,13 +62,13 @@ body {
   min-width: 70%;
   margin: 0 auto;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1025px) {
   .nav-bar-container {
     transition: 0.8s all ease;
-    width: 80%;
+    width: 90%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
   .nav-bar-container {
     transition: 0.8s all ease;
     width: 95%;
@@ -157,7 +153,6 @@ input {
   .nav-bar-menu-icon {
     display: flex;
     cursor: pointer;
-    margin-right: 10px;
   }
 }
 
@@ -167,6 +162,7 @@ input {
   align-items: center;
   position: absolute;
   overflow: hidden;
+  padding-top: 2p;
   border-top: 1px solid #d7d9de;
   z-index: 1;
   left: 40px;
@@ -174,13 +170,6 @@ input {
   max-height: 210px;
   width: 50%;
   background-color: #fff;
-}
-
-#hidden a {
-  margin: 3px;
-}
-#hidden a:not(:nth-of-type(1)) {
-  border-top: 1px solid #d7d9de;
 }
 
 .top-Nav {
@@ -201,13 +190,13 @@ input {
   min-width: 70%;
   margin: 0 auto;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1025px) {
   .top-nav-wrapper {
     transition: 0.8s all ease;
-    width: 80%;
+    width: 90%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
   .top-nav-wrapper {
     transition: 0.8s all ease;
     width: 95%;
@@ -231,7 +220,7 @@ input {
 .left-li:hover:not(:nth-of-type(2)):not(:nth-of-type(4)) {
   color: #ff1a3e;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .left-li:not(:nth-of-type(1)) {
     display: none;
   }
@@ -242,7 +231,7 @@ input {
   color: #012c5c;
   font-style: italic;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
   .center-top-nav {
     display: none;
   }
@@ -270,7 +259,7 @@ input {
   color: #9ba1b9;
   font-size: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .right-li {
     display: none;
   }
