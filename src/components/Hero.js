@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
 
         {/*   image */}
-        <img className="hero-mainImg" src={heroImage} alt="models" />
-        <div className="white-top"></div>
-        <div className="white-bottom"></div>
+        <img className="hero-models-pic" src={heroImage} alt="models" />
+        <div className="white-top-box"></div>
+        <div className="white-bottom-box"></div>
       </div>
     </div>
   );
