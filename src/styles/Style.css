@@ -177,7 +177,11 @@ input {
   margin-top: 5px;
 }
 #hidden a:last-of-type {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+}
+#hidden a:not(:first-of-type) {
+  border-top: 1px solid #d7d9de;
+  padding-top: 3px;
 }
 
 .top-Nav {
