@@ -71,7 +71,7 @@ body {
 @media screen and (max-width: 855px) {
   .nav-bar-container {
     transition: 0.8s all ease;
-    width: 95%;
+    width: 97%;
   }
 }
 
@@ -153,6 +153,7 @@ input {
   .nav-bar-menu-icon {
     display: flex;
     cursor: pointer;
+    font-size: 1.1rem;
   }
 }
 
@@ -165,11 +166,18 @@ input {
   padding-top: 2p;
   border-top: 1px solid #d7d9de;
   z-index: 1;
-  left: 40px;
-  top: 94px;
+  left: 30px;
+  top: 96px;
   max-height: 210px;
-  width: 50%;
+  width: 25%;
   background-color: #fff;
+}
+#hidden a {
+  font-size: 0.7rem;
+  margin-top: 5px;
+}
+#hidden a:last-of-type {
+  margin-bottom: 5px;
 }
 
 .top-Nav {
@@ -199,7 +207,7 @@ input {
 @media screen and (max-width: 855px) {
   .top-nav-wrapper {
     transition: 0.8s all ease;
-    width: 95%;
+    width: 97%;
   }
 }
 
