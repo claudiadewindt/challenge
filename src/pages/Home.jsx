@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       <TopNavbar />
+
       <Navbar />
       <Hero />
       <Video />

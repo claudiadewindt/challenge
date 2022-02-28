@@ -42,12 +42,15 @@
   @media screen and (max-width: 960px) {
     width: 150px;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 120px;
+  }
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  list-style: none;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -55,10 +58,11 @@
   }
 }
 
-.li-menu {
+.link-menu {
   font-size: 0.8rem;
   margin-right: 35px;
   color: $darkBlue;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
     color: $red;
@@ -87,5 +91,41 @@ input {
 
   @media screen and (max-width: 768px) {
     width: 130px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 110px;
+    margin-right: 3px;
+  }
+}
+
+.nav-bar-menu-icon {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+#hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  border-top: 1px solid $gray;
+  z-index: 1;
+  left: 40px;
+  top: 94px;
+  max-height: 210px;
+  width: 50%;
+  background-color: $white;
+}
+
+#hidden a {
+  margin: 3px;
+  &:not(:nth-of-type(1)) {
+    border-top: 1px solid $gray;
   }
 }

@@ -91,11 +91,15 @@ body {
     width: 150px;
   }
 }
+@media screen and (max-width: 400px) {
+  .nav-logo {
+    width: 120px;
+  }
+}
 
 .nav-menu {
   display: flex;
   align-items: center;
-  list-style: none;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -104,16 +108,17 @@ body {
   }
 }
 
-.li-menu {
+.link-menu {
   font-size: 0.8rem;
   margin-right: 35px;
   color: #012c5c;
+  text-decoration: none;
   cursor: pointer;
 }
-.li-menu:hover {
+.link-menu:hover {
   color: #ff1a3e;
 }
-.li-menu::last-child {
+.link-menu::last-child {
   margin-right: 0;
 }
 
@@ -137,6 +142,45 @@ input {
   input {
     width: 130px;
   }
+}
+@media screen and (max-width: 400px) {
+  input {
+    width: 110px;
+    margin-right: 3px;
+  }
+}
+
+.nav-bar-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-bar-menu-icon {
+    display: flex;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+#hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  border-top: 1px solid #d7d9de;
+  z-index: 1;
+  left: 40px;
+  top: 94px;
+  max-height: 210px;
+  width: 50%;
+  background-color: #fff;
+}
+
+#hidden a {
+  margin: 3px;
+}
+#hidden a:not(:nth-of-type(1)) {
+  border-top: 1px solid #d7d9de;
 }
 
 .top-Nav {
@@ -398,16 +442,45 @@ input {
 .video-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 21%;
-  min-width: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-top: -2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -2%;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 960px) {
+  .video-container {
+    transition: 0.8s all ease;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-container {
+    transition: 0.8s all ease;
+    width: 95%;
+  }
+}
+
+.video-wrapper {
+  display: flex;
+  margin-left: 10%;
+  min-width: 65%;
+  align-items: flex-start;
+}
+@media screen and (max-width: 960px) {
+  .video-wrapper {
+    margin-left: 5%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-wrapper {
+    margin-left: 2%;
+    width: 97%;
+  }
 }
 
 video {
-  min-width: 50%;
-  width: 50%;
-  max-width: 90%;
+  width: 100%;
 }/*# sourceMappingURL=Style.css.map */

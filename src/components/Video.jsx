@@ -5,7 +5,9 @@ import testVideo from "../assets/video/test-video.mp4";
 const Video = () => {
   return (
     <div className="video-container">
-      <video src={testVideo} />
+      <div className="video-wrapper">
+        <video src={testVideo} />
+      </div>
     </div>
   );
 };

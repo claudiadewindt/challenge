@@ -16,7 +16,7 @@ const Hero = () => {
             <h2 className="hero-text-spring">SPRING</h2>
             <h2 className="hero-text-2017">2017</h2>
             <h3 className="hero-text-with">WITH ANWAR HADID & SOFIA RICHIE</h3>
-            <p class="hero-text-paragraph">
+            <p className="hero-text-paragraph">
               Engineered for perfect form and exceptional fit - whatever you do
               in them.
             </p>
