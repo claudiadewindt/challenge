@@ -27,6 +27,8 @@ const Hero = () => {
         <img className="hero-models-pic" src={heroImage} alt="models" />
         <div className="white-top-box"></div>
         <div className="white-bottom-box"></div>
+
+        {/*   love */}
       </div>
     </div>
   );
