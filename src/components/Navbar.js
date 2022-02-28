@@ -19,7 +19,7 @@ const NavBar = () => {
 
         <form>
           <input type="text" placeholder="Search" />
-          <IoMdSearch fontSize="1.3rem" color="$darkblue" />
+          <IoMdSearch fontSize="1.3rem" color="#9ba1b9" />
         </form>
       </div>
     </nav>
