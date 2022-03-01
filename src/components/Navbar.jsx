@@ -4,7 +4,6 @@ import { IoMdSearch } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
 import "../styles/Style.css";
 
-
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
@@ -37,13 +36,11 @@ const NavBar = () => {
 
         <form>
           <input type="text" placeholder="Search" />
-          <IoMdSearch fontSize="1.3rem" color="#9ba1b9" />
+          <IoMdSearch fontSize="25px" color="#9ba1b9" />
         </form>
       </div>
     </nav>
   );
 };
-
-
 
 export default NavBar;

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
   width: 100%;
   color: $darkBlue;
   background-color: $white;
@@ -59,7 +58,7 @@
 }
 
 .link-menu {
-  font-size: 0.8rem;
+  font-size: 14px;
   margin-right: 35px;
   color: $darkBlue;
   text-decoration: none;
@@ -85,7 +84,7 @@ input {
   height: 30px;
   border: 1px solid $gray;
   padding: 0 10px;
-  font-size: 0.7rem;
+  font-size: 11px;
   outline: none;
   margin-right: 10px;
 
@@ -95,7 +94,7 @@ input {
 
   @media screen and (max-width: 400px) {
     width: 110px;
-    margin-right: 3px;
+    margin-right: 2px;
   }
 }
 
