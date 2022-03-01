@@ -559,14 +559,13 @@ input {
 /* heart */
 .heart {
   position: absolute;
-  font-family: "heroiccondensed";
   font-size: 47vh;
   color: #ff1a3e;
   left: 8%;
-  top: 14%;
+  top: 13.3%;
   opacity: 0;
-  -webkit-animation: heart 1s ease-in-out 1.62s 1 normal forwards, blueHeart 0.15s steps(1) 3s 2 alternate forwards;
-          animation: heart 1s ease-in-out 1.62s 1 normal forwards, blueHeart 0.15s steps(1) 3s 2 alternate forwards;
+  -webkit-animation: heart 1s ease-in-out 1.62s 1 normal forwards, blueHeart 0.15s steps(1) 3s 2 alternate forwards, redHeart 0.16s steps(1) 5s 2 alternate forwards;
+          animation: heart 1s ease-in-out 1.62s 1 normal forwards, blueHeart 0.15s steps(1) 3s 2 alternate forwards, redHeart 0.16s steps(1) 5s 2 alternate forwards;
 }
 
 @-webkit-keyframes heart {
@@ -576,7 +575,7 @@ input {
     z-index: 1;
   }
   100% {
-    transform: translate(0, -6%);
+    transform: translate(0, -6.2%);
     opacity: 1;
     z-index: 1;
   }
@@ -589,7 +588,7 @@ input {
     z-index: 1;
   }
   100% {
-    transform: translate(0, -6%);
+    transform: translate(0, -6.2%);
     opacity: 1;
     z-index: 1;
   }
@@ -617,6 +616,50 @@ input {
   }
 }
 @keyframes blueHeart {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    color: #ff1a3e;
+  }
+  33% {
+    opacity: 1;
+    transform: translate(1.27rem, 0rem);
+    color: #012c5c;
+  }
+  75% {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+    color: #ff1a3e;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(1.25rem, 0rem);
+    color: #012c5c;
+  }
+}
+@-webkit-keyframes redHeart {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    color: #ff1a3e;
+  }
+  33% {
+    opacity: 1;
+    transform: translate(1.27rem, 0rem);
+    color: #012c5c;
+  }
+  75% {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+    color: #ff1a3e;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(1.25rem, 0rem);
+    color: #012c5c;
+  }
+}
+@keyframes redHeart {
   0% {
     opacity: 1;
     transform: translate(0, 0);

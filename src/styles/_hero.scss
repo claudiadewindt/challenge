@@ -242,14 +242,14 @@
 /* heart */
 .heart {
   position: absolute;
-  font-family: "heroiccondensed";
   font-size: 47vh;
   color: $red;
   left: 8%;
-  top: 14%;
+  top: 13.3%;
   opacity: 0;
   animation: heart 1s ease-in-out 1.62s 1 normal forwards,
-    blueHeart 0.15s steps(1) 3s 2 alternate forwards;
+    blueHeart 0.15s steps(1) 3s 2 alternate forwards,
+    redHeart 0.16s steps(1) 5s 2 alternate forwards;
 }
 
 @keyframes heart {
@@ -260,7 +260,7 @@
   }
 
   100% {
-    transform: translate(0, -6%);
+    transform: translate(0, -6.2%);
     opacity: 1;
     z-index: 1;
   }
@@ -292,6 +292,31 @@
   }
 }
 
+@keyframes redHeart {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    color: $red;
+  }
+
+  33% {
+    opacity: 1;
+    transform: translate(1.27rem, 0rem);
+    color: $darkBlue;
+  }
+
+  75% {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+    color: $red;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(1.25rem, 0rem);
+    color: $darkBlue;
+  }
+}
 .letter-v {
   position: absolute;
   font-family: "heroiccondensed";
