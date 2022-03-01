@@ -1,7 +1,6 @@
 import React from "react";
 import heroImage from "../assets/images/tommy-header.jpg";
 import "../styles/Style.css";
-//import { ReactComponent as Heart } from "../assets/icons/heart.svg";
 import { RiHeart3Line } from "react-icons/ri";
 
 const Hero = () => {
