@@ -215,16 +215,6 @@
 }
 
 /* love l.a. title */
-.love-la-title {
-  font-family: "heroiccondensed";
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 3px;
-  color: $red;
-  line-height: 1.8rem;
-  opacity: 0;
-  animation: appear 0.5s ease-in-out 0.8s 1 normal forwards;
-}
 
 .letter-l {
   position: absolute;
@@ -249,13 +239,14 @@
   }
 }
 
+/* heart */
 .heart {
   position: absolute;
   font-family: "heroiccondensed";
-  width: 46vh;
-  height: 35vh;
-  left: 7.3%;
-  top: 27%;
+  font-size: 47vh;
+  color: $red;
+  left: 8%;
+  top: 14%;
   opacity: 0;
   animation: heart 1s ease-in-out 1.62s 1 normal forwards,
     blueHeart 0.15s steps(1) 3s 2 alternate forwards;
@@ -263,18 +254,13 @@
 
 @keyframes heart {
   0% {
-    transform: translate(0rem, 0rem);
+    transform: translate(0, 0);
     opacity: 0;
     z-index: 1;
   }
 
-  50% {
-    opacity: 1;
-    z-index: 1;
-  }
-
   100% {
-    transform: translate(0rem, -6.5rem);
+    transform: translate(0, -6%);
     opacity: 1;
     z-index: 1;
   }
@@ -282,9 +268,114 @@
 
 @keyframes blueHeart {
   0% {
-    top: 12.5rem;
+    opacity: 1;
+    transform: translate(0, 0);
+    color: $red;
+  }
+
+  33% {
+    opacity: 1;
+    transform: translate(1.27rem, 0rem);
+    color: $darkBlue;
+  }
+
+  75% {
     opacity: 1;
     transform: translate(0rem, 0rem);
-    fill: $red;
+    color: $red;
   }
+
+  100% {
+    opacity: 1;
+    transform: translate(1.25rem, 0rem);
+    color: $darkBlue;
+  }
+}
+
+.letter-v {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 44%;
+  top: -16.5%;
+  animation: letters 1s ease-in-out 1.7s 1 normal forwards;
+}
+
+.letter-e {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 63%;
+  top: -16.5%;
+  animation: letters 1s ease-in-out 1.66s 1 normal forwards;
+}
+
+.dot1 {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 78%;
+  top: -16.5%;
+  animation: letters 1s ease-in-out 1.68s 1 normal forwards;
+}
+
+.letter-l2 {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 37%;
+  top: 19.5%;
+  opacity: 0;
+  animation: letters 1s ease-in-out 1.7s 1 normal forwards;
+}
+
+.dot2 {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 50%;
+  top: 19.5%;
+  opacity: 0;
+  animation: letters 1s ease-in-out 1.72s 1 normal forwards;
+}
+
+.letter-a {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 60%;
+  top: 19.5%;
+  opacity: 0;
+  animation: letters 1s ease-in-out 1.74s 1 normal forwards;
+}
+
+.dot3 {
+  position: absolute;
+  font-family: "heroiccondensed";
+  font-size: 51vh;
+  color: $red;
+  opacity: 0;
+  z-index: 1;
+  left: 75%;
+  top: 19.5%;
+  opacity: 0;
+  animation: letters 1s ease-in-out 1.76s 1 normal forwards;
 }

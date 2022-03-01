@@ -1,7 +1,8 @@
 import React from "react";
 import heroImage from "../assets/images/tommy-header.jpg";
 import "../styles/Style.css";
-import { ReactComponent as Heart } from "../assets/icons/heart.svg";
+//import { ReactComponent as Heart } from "../assets/icons/heart.svg";
+import { RiHeart3Line } from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -10,10 +11,17 @@ const Hero = () => {
         {/*   top text */}
         <div className="hero-text-topText">24/7 LIVE.</div>
         <div className="hideTopText"></div>
+
+        {/*   love letters */}
         <h1 className="letter-l">L</h1>
-        <div>
-          <Heart className="heart" />
-        </div>
+        <RiHeart3Line className="heart" />
+        <h1 className="letter-v">V</h1>
+        <h1 className="letter-e">E</h1>
+        <h1 className="dot1">.</h1>
+        <h1 className="letter-l2">L</h1>
+        <h1 className="dot2">.</h1>
+        <h1 className="letter-a">A</h1>
+        <h1 className="dot3">.</h1>
 
         {/*   left section */}
         <div className="hero-text">
