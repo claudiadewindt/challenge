@@ -42,16 +42,13 @@ To run the app you can run the following command in the main directory:
     |     |     | Navbar.jsx
     |     |     | TopNavbar.jsx
     |     |     | Video.jsx
-    |     |     | HeroImage
+    |     |     | HeroImage.jsx
     |     |
     |     |_____assets
     |     |     | fonts
     |     |     | icons
     |     |     | images
     |     |     | video
-    |     |
-    |     |_____page
-    |     |     | Home.js
     |     |
     |     |_____page
     |     |     | Home.jsx
