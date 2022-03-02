@@ -28,7 +28,7 @@ To run the app you can run the following command in the main directory:
     |_____public
     |     | index.html
     |     | favicon.ico
-    |     | manifext.json
+    |     | manifest.json
     |     | robots.txt
     |     |
     |_____src
@@ -62,13 +62,13 @@ To run the app you can run the following command in the main directory:
     |     |     | _heroimage.scss
     |     |     | Style.css
     |     |     | Style.css.map
-    |     |     | Style.scss      
-    |___________________________________________________________     
-         
-       
- ```
- 
- ### Folder structure
+    |     |     | Style.scss
+    |___________________________________________________________
+
+
+```
+
+## 3. Folder structure
 
 - `public` || public facing client code
 - `components` || all components that are used to build the page
