@@ -6,23 +6,18 @@
   width: 75%;
   margin: 0 auto;
   margin-top: -2%;
-  margin-bottom: 10%;
-  z-index: -1;
+  margin-bottom: 5%;
   position: relative;
+  z-index: 1;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
     width: 80%;
   }
 
-  @media screen and (max-width: 700px) {
-    margin-top: 1rem;
-  }
-
   @media screen and (max-width: 600px) {
     transition: 0.8s all ease;
     width: 95%;
-    margin-top: 2rem;
   }
 }
 
@@ -31,7 +26,8 @@
   margin-left: 10%;
   min-width: 70%;
   align-items: flex-start;
-  border: 1px solid $gray;
+  z-index: 1;
+
   @media screen and (max-width: 960px) {
     margin-left: 5%;
     width: 80%;

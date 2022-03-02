@@ -11,8 +11,8 @@ const Home = () => {
       <TopNavbar />
       <Navbar />
       <HeroImage />
-      <Hero />
       <Video />
+      <Hero />
     </>
   );
 };

@@ -52,7 +52,6 @@ body {
   color: #012c5c;
   background-color: #fff;
   border-bottom: 1px solid #d7d9de;
-  z-index: 9999;
 }
 @media screen and (max-width: 960px) {
   .nav-bar {
@@ -169,16 +168,16 @@ input {
   overflow: hidden;
   padding-top: 2px;
   border-top: 1px solid #d7d9de;
-  z-index: 11;
   justify-content: center;
   top: 96px;
   padding-left: 5%;
   max-height: 210px;
   width: 20%;
+  z-index: 11;
   background-color: #fff;
 }
 #hidden a {
-  font-size: 0.7rem;
+  font-size: 14px;
   margin-top: 5px;
 }
 #hidden a:last-of-type {
@@ -290,9 +289,9 @@ input {
   width: 75%;
   margin: 0 auto;
   margin-top: -2%;
-  margin-bottom: 10%;
-  z-index: -1;
+  margin-bottom: 5%;
   position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 960px) {
   .video-container {
@@ -300,16 +299,10 @@ input {
     width: 80%;
   }
 }
-@media screen and (max-width: 700px) {
-  .video-container {
-    margin-top: 1rem;
-  }
-}
 @media screen and (max-width: 600px) {
   .video-container {
     transition: 0.8s all ease;
     width: 95%;
-    margin-top: 2rem;
   }
 }
 
@@ -318,7 +311,7 @@ input {
   margin-left: 10%;
   min-width: 70%;
   align-items: flex-start;
-  border: 1px solid #d7d9de;
+  z-index: 1;
 }
 @media screen and (max-width: 960px) {
   .video-wrapper {
@@ -783,7 +776,6 @@ input {
   margin: 0 auto;
   width: 75%;
   margin-top: 1rem;
-  z-index: 1;
 }
 @media screen and (max-width: 1025px) {
   .hero-image {
