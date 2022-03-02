@@ -1,241 +1,164 @@
-.hero-container {
+.hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-width: 70%;
-  margin-top: 40px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.hero-wrapper {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 75%;
+  top: 20%;
+  height: 27rem;
 
   @media screen and (max-width: 1025px) {
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    justify-content: center;
     width: 90%;
+    top: 16%;
   }
 
   @media screen and (max-width: 855px) {
     width: 97%;
   }
-
-  @media screen and (max-width: 768px) {
-    margin-top: 1.5rem;
-    margin-left: 2%;
-  }
 }
 
-.hero {
+.hero-bottom-content {
   display: flex;
-  min-width: 70%;
   flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-
-  &-text {
-    max-width: 40%;
-    font-family: "heroiccondensed";
-    font-weight: 800;
-    left: -2%;
-    height: 30%;
-    color: $darkBlue;
-    opacity: 0;
-    animation: appear 0.5s ease-in-out 0.8s 1 normal forwards;
-
-    @media screen and(max-width: 768px) {
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-    }
-
-    @keyframes appear {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    &-bottom {
-      position: absolute;
-      left: 0;
-      width: 16%;
-      top: 50%;
-
-      @media screen and (max-width: 768px) {
-        top: 30%;
-        width: 25%;
-      }
-    }
-
-    &-topText {
-      position: absolute;
-      top: 14%;
-      font-family: "heroiccondensed";
-      font-size: 1em;
-      letter-spacing: 3px;
-      font-weight: 900;
-      color: $red;
-      z-index: -2;
-      animation: topText 1s ease-in-out 1.6s 1 normal forwards;
-
-      @keyframes topText {
-        0% {
-          transform: translate(0rem, 0rem);
-        }
-
-        100% {
-          transform: translate(0rem, -1.2rem);
-        }
-      }
-    }
-
-    &-spring {
-      color: $darkBlue;
-      line-height: 10px;
-      font-size: 1.3rem;
-      letter-spacing: 7px;
-      font-weight: 900;
-
-      @media screen and (max-width: 768px) {
-        font-size: 1rem;
-        letter-spacing: 5px;
-        line-height: 0px;
-      }
-    }
-
-    &-2017 {
-      font-size: 1.3rem;
-      color: $red;
-      display: block;
-      line-height: 10px;
-      letter-spacing: 7px;
-      font-weight: 900;
-    }
-
-    &-with {
-      font-size: 0.8rem;
-      font-weight: 900;
-      width: 100%;
-      letter-spacing: 2px;
-      @media screen and (max-width: 768px) {
-        font-size: 12px;
-        line-height: 11px;
-      }
-    }
-
-    &-paragraph {
-      font-family: "Arial";
-      font-size: 0.35rem;
-      letter-spacing: 0.5px;
-      font-weight: 400;
-      width: 100%;
-      line-height: 1.3;
-    }
-
-    @media screen and (max-width: 768px) {
-      top: 25%;
-      font-size: 1rem !important;
-    }
-  }
-
-  .hideTopText {
-    position: absolute;
-    top: 14%;
-    background-color: $white;
-    width: 7.5rem;
-    height: 2rem;
-    z-index: 0;
-  }
-
-  &-models-pic {
-    width: 78%;
-    margin-left: 10%;
-    opacity: 0;
-    justify-self: right;
-    animation: appear 0.5s ease-in-out 1s 1 normal forwards;
-
-    @media screen and (max-width: 768px) {
-      width: 70%;
-    }
-  }
-
-  .white-top-box {
-    width: 14%;
-    height: 40%;
-    background-color: $white;
-    position: absolute;
-    right: -0.1%;
-    animation: shrinkTop 0.7s ease-in-out 1s 1 normal forwards;
-    overflow: hidden;
-  }
-
-  @keyframes shrinkTop {
-    0% {
-      width: 30%;
-    }
-
-    100% {
-      width: 6%;
-    }
-  }
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 10rem;
+  margin-top: 1rem;
+  object-fit: contain;
 }
 
-.white-bottom-box {
-  width: 6.25rem;
-  height: 44.125rem;
-  background-color: $white;
-  position: absolute;
-  right: -0.0625rem;
-  top: 25rem;
-  animation: shrinkBottom 1s ease-in-out 1.1s 1 normal forwards;
-
-  @keyframes shrinkBottom {
-    0% {
-      width: 6.25rem;
-    }
-
-    100% {
-      width: 0%;
-    }
-  }
+.left-content {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  justify-content: flex-start;
+  gap: 0.1rem;
+  width: 22%;
+  animation: appear 0.5s ease-in-out 0.8s 1 normal forwards;
 }
 
-/* love l.a. title */
-
-.letter-l {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
-  opacity: 0;
-  left: -2%;
-  top: -16.5%;
-  animation: letters 1s ease-in-out 1.6s 1 normal forwards;
-}
-
-@keyframes letters {
-  0% {
-    transform: translate(0rem, 0rem);
+@keyframes appear {
+  from {
     opacity: 0;
   }
 
-  100% {
-    transform: translate(0rem, -6%);
+  to {
     opacity: 1;
   }
 }
 
-/* heart */
-.heart {
-  position: absolute;
-  font-size: 47vh;
+.left-content h2 {
+  font-family: "heroiccondensed";
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  left: 0%;
+  margin: 0;
+  line-height: 1;
+}
+.spring {
+  color: $darkBlue;
+}
+
+.t2017 {
   color: $red;
-  left: 8%;
-  top: 13.3%;
+  padding-bottom: 20px;
+}
+
+.left-content h3 {
+  font-family: "heroiccondensed";
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  left: 0%;
+  margin: 0;
+  color: $darkBlue;
+  padding-bottom: 0.8rem;
+}
+
+.left-content p {
+  font-size: 0.47rem;
+  font-weight: 400;
+  color: $darkBlue;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 66%;
+  justify-content: space-between;
+}
+
+/* love */
+.hero-top-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.love {
+  color: $red;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "heroiccondensed";
+  align-items: flex-end;
+  font-weight: 800;
+  justify-content: left;
+  left: -2%;
+  width: 100%;
+  margin-top: 3rem;
+  line-height: 10rem;
+}
+
+.love span {
+  font-size: 13rem;
+  text-transform: uppercase;
+  text-size-adjust: 100%;
+}
+
+.letter-l {
   opacity: 0;
-  animation: heart 1s ease-in-out 1.62s 1 normal forwards,
+  margin-right: 1rem;
+  animation: appear 1s ease-in-out 1.6s 1 normal forwards;
+  animation-delay: 0.2s;
+}
+
+.heart {
+  width: 28%;
+  height: 100%;
+  margin-right: 2rem;
+  fill: $red;
+  opacity: 0;
+  animation: heart 0.5s ease-in-out 1.62s 1 normal forwards,
     blueHeart 0.15s steps(1) 3s 2 alternate forwards,
     redHeart 0.16s steps(1) 5s 2 alternate forwards;
+
+  @media screen and (max-width: 1025px) {
+    width: 23%;
+  }
+
+  @media screen and (max-width: 855px) {
+    width: 21%;
+  }
 }
 
 @keyframes heart {
@@ -246,12 +169,11 @@
   }
 
   100% {
-    transform: translate(0, -6.2%);
+    transform: translate(0, -1%);
     opacity: 1;
     z-index: 1;
   }
 }
-
 @keyframes blueHeart {
   0% {
     opacity: 1;
@@ -296,97 +218,121 @@
     transform: translate(0rem, 0rem);
     color: $red;
   }
-
-  100% {
-    opacity: 1;
-    transform: translate(1.25rem, 0rem);
-    color: $darkBlue;
-  }
 }
+
 .letter-v {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
   opacity: 0;
-  z-index: 1;
-  left: 44%;
-  top: -16.5%;
-  animation: letters 1s ease-in-out 1.7s 1 normal forwards;
+  margin-right: 2.5rem;
+  animation: appear 1s ease-in-out 1.4s 1 normal forwards;
+  animation-delay: 0.4s;
 }
 
 .letter-e {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
   opacity: 0;
-  z-index: 1;
-  left: 63%;
-  top: -16.5%;
-  animation: letters 1s ease-in-out 1.66s 1 normal forwards;
+  margin-right: 1.3rem;
+  animation: appear 1s ease-in-out 1.6s 1 normal forwards;
+  animation-delay: 0.5s;
 }
 
-.dot1 {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
+.dot {
   opacity: 0;
-  z-index: 1;
-  left: 78%;
-  top: -16.5%;
-  animation: letters 1s ease-in-out 1.68s 1 normal forwards;
+  animation: appear 1s ease-in-out 1.8s 1 normal forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* l.a. */
+.right-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.right-content span {
+  font-size: 13.5rem;
+  font-family: "heroiccondensed";
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $red;
 }
 
 .letter-l2 {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
   opacity: 0;
-  z-index: 1;
-  left: 37%;
-  top: 19.5%;
-  opacity: 0;
-  animation: letters 1s ease-in-out 1.7s 1 normal forwards;
+  margin-right: 1.5rem;
+  animation: appear 1s ease-in-out 2s 1 normal forwards;
+  animation-delay: 0.7s;
 }
 
 .dot2 {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
   opacity: 0;
-  z-index: 1;
-  left: 50%;
-  top: 19.5%;
-  opacity: 0;
-  animation: letters 1s ease-in-out 1.72s 1 normal forwards;
+  margin-right: 1.3rem;
+  animation: appear 1s ease-in-out 2.2s 1 normal forwards;
+  animation-delay: 0.8s;
 }
 
 .letter-a {
-  position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
   opacity: 0;
-  z-index: 1;
-  left: 60%;
-  top: 19.5%;
-  opacity: 0;
-  animation: letters 1s ease-in-out 1.74s 1 normal forwards;
+  margin-right: 1.3rem;
+  animation: appear 1s ease-in-out 2.4s 1 normal forwards;
+  animation-delay: 0.9s;
 }
 
 .dot3 {
+  opacity: 0;
+  animation: appear 1s ease-in-out 2.6s 1 normal forwards;
+  animation-delay: 1s;
+}
+
+.white-top-box {
+  width: 16%;
+  height: 10rem;
+  top: -6%;
+  background-color: $white;
   position: absolute;
-  font-family: "heroiccondensed";
-  font-size: 51vh;
-  color: $red;
-  opacity: 0;
-  z-index: 1;
-  left: 75%;
-  top: 19.5%;
-  opacity: 0;
-  animation: letters 1s ease-in-out 1.76s 1 normal forwards;
+  right: -0.1%;
+  animation: shrinkTop 0.7s ease-in-out 0.7s 1 normal forwards;
+  overflow: hidden;
+}
+
+@keyframes shrinkTop {
+  0% {
+    width: 30%;
+  }
+
+  100% {
+    width: 6%;
+  }
+}
+
+.white-bottom-box {
+  width: 6.5rem;
+  height: 44.125rem;
+  background-color: $white;
+  position: absolute;
+  right: -0.0625rem;
+  top: 8.7rem;
+  animation: shrinkBottom 0.7s ease-in-out 0.7s 1 normal forwards;
+
+  @keyframes shrinkBottom {
+    0% {
+      width: 6.25rem;
+    }
+
+    100% {
+      width: 0%;
+    }
+  }
 }
