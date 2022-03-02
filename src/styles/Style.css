@@ -290,8 +290,7 @@ input {
   margin: 0 auto;
   margin-top: -2%;
   margin-bottom: 5%;
-  position: relative;
-  z-index: 1;
+  z-index: -1;
 }
 @media screen and (max-width: 960px) {
   .video-container {
@@ -311,7 +310,6 @@ input {
   margin-left: 10%;
   min-width: 70%;
   align-items: flex-start;
-  z-index: 1;
 }
 @media screen and (max-width: 960px) {
   .video-wrapper {
