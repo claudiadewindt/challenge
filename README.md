@@ -19,7 +19,7 @@ To run the app you can run the following command in the main directory:
 ```
 ._______________________________________________________________
 |
-|_ MM-challenge
+|_ challenge
     |  .gitignore
     |  package-lock.json
     |  package.json
