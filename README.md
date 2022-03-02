@@ -1,4 +1,4 @@
-# _Tommy Hilfiger's Denim_ Landing page clallenge for Media.Monks
+# _Tommy Hilfiger's Denim_ Landing page challenge for Media.Monks
 
 [Click here for the Demo version](https://tommyhilfigerchallenge.netlify.app/)
 
