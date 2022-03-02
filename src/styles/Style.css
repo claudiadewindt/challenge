@@ -291,6 +291,8 @@ input {
   margin: 0 auto;
   margin-top: -2%;
   margin-bottom: 10%;
+  z-index: -1;
+  position: relative;
 }
 @media screen and (max-width: 960px) {
   .video-container {
@@ -338,7 +340,7 @@ input {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  z-index: 0;
 }
 
 .hero-wrapper {
@@ -381,8 +383,9 @@ input {
   -o-object-fit: cover;
      object-fit: cover;
   justify-content: flex-start;
+  opacity: 0;
   gap: 0.1rem;
-  width: 22%;
+  width: 21%;
   -webkit-animation: appear 0.5s ease-in-out 0.8s 1 normal forwards;
           animation: appear 0.5s ease-in-out 0.8s 1 normal forwards;
 }
@@ -406,7 +409,7 @@ input {
 }
 .left-content h2 {
   font-family: "heroiccondensed";
-  font-size: 1.5rem;
+  font-size: 60px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -426,7 +429,7 @@ input {
 
 .left-content h3 {
   font-family: "heroiccondensed";
-  font-size: 1rem;
+  font-size: 40px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -437,7 +440,7 @@ input {
 }
 
 .left-content p {
-  font-size: 0.47rem;
+  font-size: 16px;
   font-weight: 400;
   color: #012c5c;
 }
@@ -458,7 +461,7 @@ input {
   flex-direction: row;
   align-items: flex-end;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 1.3rem;
 }
 
 .love {
@@ -750,7 +753,7 @@ input {
   background-color: #fff;
   position: absolute;
   right: -0.0625rem;
-  top: 8.7rem;
+  top: 31%;
   -webkit-animation: shrinkBottom 0.7s ease-in-out 0.7s 1 normal forwards;
           animation: shrinkBottom 0.7s ease-in-out 0.7s 1 normal forwards;
 }
@@ -780,6 +783,7 @@ input {
   margin: 0 auto;
   width: 75%;
   margin-top: 1rem;
+  z-index: 1;
 }
 @media screen and (max-width: 1025px) {
   .hero-image {
@@ -808,7 +812,7 @@ input {
 }
 @keyframes reveal {
   0% {
-    transform: translateY(100%);
+    transform: translateY(20%);
     opacity: 0;
   }
   100% {
@@ -819,5 +823,8 @@ input {
 
 .hero-image img {
   width: 75%;
+  opacity: 0;
   height: auto;
+  -webkit-animation: appear 0.2s ease-in-out 0.3s 1 normal forwards;
+          animation: appear 0.2s ease-in-out 0.3s 1 normal forwards;
 }/*# sourceMappingURL=Style.css.map */

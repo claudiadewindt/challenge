@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  z-index: 0;
 }
 
 .hero-wrapper {
@@ -44,8 +44,9 @@
   flex-direction: column;
   object-fit: cover;
   justify-content: flex-start;
+  opacity: 0;
   gap: 0.1rem;
-  width: 22%;
+  width: 21%;
   animation: appear 0.5s ease-in-out 0.8s 1 normal forwards;
 }
 
@@ -61,7 +62,7 @@
 
 .left-content h2 {
   font-family: "heroiccondensed";
-  font-size: 1.5rem;
+  font-size: 60px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -80,7 +81,7 @@
 
 .left-content h3 {
   font-family: "heroiccondensed";
-  font-size: 1rem;
+  font-size: 40px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -91,7 +92,7 @@
 }
 
 .left-content p {
-  font-size: 0.47rem;
+  font-size: 16px;
   font-weight: 400;
   color: $darkBlue;
 }
@@ -112,7 +113,7 @@
   flex-direction: row;
   align-items: flex-end;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 1.3rem;
 }
 
 .love {
@@ -323,7 +324,7 @@
   background-color: $white;
   position: absolute;
   right: -0.0625rem;
-  top: 8.7rem;
+  top: 31%;
   animation: shrinkBottom 0.7s ease-in-out 0.7s 1 normal forwards;
 
   @keyframes shrinkBottom {

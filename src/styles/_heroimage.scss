@@ -7,6 +7,7 @@
   margin: 0 auto;
   width: 75%;
   margin-top: 1rem;
+  z-index: 1;
 
   @media screen and (max-width: 1025px) {
     width: 90%;
@@ -32,7 +33,7 @@
 
   @keyframes reveal {
     0% {
-      transform: translateY(100%);
+      transform: translateY(20%);
       opacity: 0;
     }
     100% {
@@ -44,5 +45,7 @@
 
 .hero-image img {
   width: 75%;
+  opacity: 0;
   height: auto;
+  animation: appear 0.2s ease-in-out 0.3s 1 normal forwards;
 }
