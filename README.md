@@ -74,3 +74,10 @@ To run the app you can run the following command in the main directory:
 - `components` || all components that are used to build the page
 - `pages` || the page with the Home.jsx landing page
 - `index.js` || the start point of app
+
+## 4. Tech of choice
+-React.js
+-SCSS
+-CSS animations
+
+Build with ❤️
