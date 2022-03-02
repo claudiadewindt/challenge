@@ -76,8 +76,8 @@ To run the app you can run the following command in the main directory:
 - `index.js` || the start point of app
 
 ## 4. Tech of choice
--React.js
--SCSS
--CSS animations
+- React.js
+- SCSS
+- CSS animations
 
 Build with ❤️
