@@ -4,12 +4,13 @@ import testVideo from "../assets/video/test-video.mp4";
 import ReactPlayer from "react-player";
 
 const Video = () => {
+  const play = true;
   return (
     <div className="video-container">
       <div className="video-wrapper">
         <ReactPlayer
           url={testVideo}
-          controls="true"
+          controls={play}
           width="100%"
           height="auto"
         />
